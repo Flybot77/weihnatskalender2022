@@ -1,0 +1,302 @@
+﻿body {
+  background: url(https://cdn.pixabay.com/animation/2022/10/15/05/02/05-02-15-576_512.gif) no-repeat top center #82d8cb;
+  background-size: cover;
+}
+/* date button */
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(251, 251, 3);
+  background-image: linear-gradient(to top left,
+                                    rgb(227, 217, 27),
+                                    rgba(226, 223, 19, 0.982) 30%,
+                                    rgb(225, 222, 18));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgb(212, 226, 16);
+}
+.styled:hover {
+  background-color: rgb(238, 255, 0);
+}
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(233, 215, 17, 0.946);
+.p 
+  font-family: 'Kalam', cursive;
+  color: #fffff;
+  font-size: 2em;
+}
+/* mobile first grid layout */
+.grid-1 {
+  display: grid;
+  width: 96%;
+  max-width: 1080px;
+  margin: 2% auto;
+  
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 25px;
+  
+  grid-template-areas:    "t        t       t"
+                          "d23      d20     d12"
+                          "d2       d14     d4"
+                          "d5       d22     d16"
+                          "d1       d7      d9"
+                          "d10      d11     d18"
+                          "d13      d3      d15"
+                          "d6       d17     d8"
+                          "d19      d24     d21";
+}
+
+/* media query */
+@media only screen and (min-width: 500px) {
+  
+  .grid-1 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+                  "t    d6    d19   d2      d7      d8"
+                  "d23  d18   d1    d4      d11     d12"
+                  "d17  d17   d24   d24     d9      d13"
+                  "d17  d17   d24   d24     d21     d20"
+                  "d3   d3    d24   d24     d5      d22"
+                  "d3   d3    d16   d14     d10     d15";
+  }
+  
+}
+
+
+/* individual items */
+  .styled {
+    grid-area: t;
+  } 
+  .day-1 {
+  grid-area: d1;
+  }
+  .day-1 .back {
+    background-image: url(01_christmas-g4888e03c7_640.v1.cropped.png);
+  }
+  .day-2 {
+    grid-area: d2;
+  }
+  .day-2 .back {
+    background-image: url(02_christmas.png);
+  }
+  .day-3 {
+    grid-area: d3;
+  }
+  .day-3 .back {
+    background-image: url(03_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-4 {
+    grid-area: d4;
+  }
+  .day-4 .back {
+    background-image: url(04_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-5 {
+    grid-area: d5;
+  }
+  .day-5 .back {
+    background-image: url(05_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-6 {
+    grid-area: d6;
+  }
+  .day-6 .back {
+    background-image: url(06_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-7 {
+    grid-area: d7;
+  }
+  .day-7 .back {
+    background-image: url(07_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-8 {
+    grid-area: d8;
+  }
+  .day-8 .back {
+    background-image: url(08_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-9 {
+    grid-area: d9;
+  }
+  .day-9 .back {
+    background-image: url(09_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-10 {
+    grid-area: d10;
+  }
+  .day-10 .back {
+    background-image: url(10_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-11 {
+    grid-area: d11;
+  }
+  .day-11 .back {
+    background-image: url(11_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-12 {
+    grid-area: d12;
+  }
+  .day-12 .back {
+    background-image: url(12_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-13 {
+    grid-area: d13;
+  }
+  .day-13 .back {
+    background-image: url(13_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-14 {
+    grid-area: d14;
+  }
+  .day-14 .back {
+    background-image: url(14_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-15 {
+    grid-area: d15;
+  }
+  .day-15 .back {
+    background-image: url(15_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-16 {
+    grid-area: d16;
+  }
+  .day-16 .back {
+    background-image: url(16_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-17 {
+    grid-area: d17;
+  }
+  .day-17 .back {
+    background-image: url(17_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-18 {
+    grid-area: d18;
+  }
+  .day-18 .back {
+    background-image: url(18_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-19 {
+    grid-area: d19;
+  }
+  .day-19 .back {
+    background-image: url(19_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-20 {
+    grid-area: d20;
+  }
+  .day-20 .back {
+    background-image: url(20_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-21 {
+    grid-area: d21;
+  }
+  .day-21 .back {
+    background-image: url(21_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-22 {
+    grid-area: d22;
+  }
+  .day-22 .back {
+    background-image: url(22_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-23 {
+    grid-area: d23;
+  }
+  .day-23 .back {
+    background-image: url(23_christmas-g4888e03c7_640.jpeg);
+  }
+  .day-24 {
+    grid-area: d24;
+  }
+  .day-24 .back {
+    background-image: url(24_christmas-g4888e03c7_640.jpeg);
+  }
+
+
+/* door styles */
+
+.grid-1 input {
+  display: none;
+}
+
+label {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  cursor: pointer;
+
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+  height: 120px;
+}
+
+.door {
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 300ms;
+  border: 4px dashed yellow;
+  border-radius: 10px;
+}
+
+  .door div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* typography */
+    font-family: 'Kalam', cursive;
+    color: #ecf41d;
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .door .back {
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #2e313d;
+      transform: rotateY(180deg);
+      transition: transform 0.5s ease;
+      cursor: zoom-in;
+  }
+
+  label:hover .door {
+    border-color: #ecf41d;
+  }
+
+  :checked + .door .back {
+    transform: rotateY(180deg);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+
+
+/* footer styles */
+footer {
+  text-align: center;
+  padding: 4em 0;
+  -webkit-text-fill-color: #ffff00;
+}  
+  footer a {
+      color: #ffff00;
+  } 
+    footer a:hover {
+          text-decoration: #ffff00;
+    }
